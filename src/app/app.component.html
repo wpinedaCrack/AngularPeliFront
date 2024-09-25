@@ -1,0 +1,34 @@
+<h1>Hola Mundanos {{title}}</h1>
+
+<h1>Welcome {{title}}</h1>
+  <app-addpersona></app-addpersona>
+
+<div>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>numeroIdentificacion</th>
+      <th>edad</th>
+      <th>fechaNacimiento</th>      
+      <th>salario</th>
+      <th>esEmpleado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let persona of personas">
+      <td>{{ persona.numeroIdentificacion }}</td>
+      <td>{{ persona.nombre }}</td>
+      <td>{{ persona.edad }}</td>
+      <td>{{ persona.fechaNacimiento }}</td>
+      <td>{{ persona.salario }}</td>
+      <td>{{ persona.esEmpleado }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<button type="button" class="btn btn-success">Success</button>
+
+
+</div>
